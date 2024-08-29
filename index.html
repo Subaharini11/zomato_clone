@@ -19,7 +19,12 @@
         <img class="head-img" src="frontpg-img/logo.webp">
         <p>Discover your food & drink in <span class="head-span">Pollachi</span></p>
         <div class="search">
-            <input type="text" placeholder="pollachi">
+            <select id="city" onchange="updateCity()">
+                <option value="Pollachi">Pollachi</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Others">Others</option>
+            </select>
+            <input type="text" id="OtherCity" placeholder="Enter your city" oninput="updateCity()">
             <input type="text" placeholder="Search for Restaurant">
         </div>
     </div>
@@ -29,17 +34,189 @@
         <div class="row-v">
             <div class="col-v">
                 <img class="v-img" src="frontpg-img/order1.webp">
-                <a href="#">Order food online</a>
+                <a href="food.html">Order food online</a>
             </div>
             <div class="col-v">
                 <img class="v-img" src="frontpg-img/order2.webp">
-                <a href="#">Go out for a meal</a>
+                <a href="food.html">Go out for a meal</a>
             </div>
             <div class="col-v">
                 <img class="v-img" src="frontpg-img/order3.jpg">
-                <a href="#">Nightlife clubs</a>
+                <a href="food.html">Nightlife clubs</a>
             </div>
         </div>
     </div>
+
+    <!-- collections -->
+     <div class="collections">
+        <h1>Collections</h1>
+        <div class="head-c">
+        <p>Explore curated lists of top restaurants, cafes, pubs and bars in <span>Pollachi</span>,based on trends</p>
+        <a href="#">All Collections in <span class="head-span">Pollachi</span>></a>
+        </div>
+        <div class="row-c">
+            <div class="col-c">
+                <img class="c-img" src="frontpg-img/collection1.jpg">
+                <p>Veggie friendly</p>
+                <p>227 places</p>
+            </div>
+            <div class="col-c">
+                <img class="c-img" src="frontpg-img/collection2.jpg">
+                <p>Cakes and desserts</p>
+                <p>252 places</p>
+            </div>
+            <div class="col-c">
+                <img class="c-img" src="frontpg-img/collection3.jpg">
+                <p>Cafes and Buffets</p>
+                <p>127 places</p>
+            </div>
+        </div>
+     </div>
+     
+     <!-- localities -->
+      <div class="localities">
+        <h2>Popular localities in and around <span class="head-span">Pollachi</span></h2>
+        <div class="row-l">
+            <div class="col-l">
+                <a href="#">Mahalingapuram(394 places)</a>
+                <a href="#">Sungam(577 places)</a>
+                <a href="#">Aliyar(163 places)</a>
+            </div>
+            <div class="col-l">
+                <a href="#">Anaimalai(377 places)</a>
+                <a href="#">Achipatti(302 places)</a>
+                <a href="#">Udumalpettai(87 places)</a>
+            </div><div class="col-l">
+                <a href="#">Mullupaadi(163 places)</a>
+                <a href="#">Kinathukedavu(172 places)</a>
+                <a href="#">See more</a>
+            </div>
+        </div>
+      </div>
+
+     <!-- app -->
+      <div class="app">
+        <img class="mbl" src="frontpg-img/mobile-app.webp">
+        <div class="app1">
+            <h>Get the Zomato app</h>
+            <p>We will send you the link,open it on your phone to download the app</p>
+            <div class="radio">
+                <input type="radio" value="Email">
+                <label for="Email">Email</label>
+                <input type="radio" value="Phone">
+                <label for="Phone">Phone</label>
+            </div>
+            <div class="mail">
+                <input type="mail" placeholder="Email">
+                <input type="button" value="Share app link">
+            </div>
+            <p>Download app from</p>
+            <div class="img-app">
+                <img src="frontpg-img/app-store1.webp">
+                <img src="frontpg-img/app-store2.webp">
+            </div>
+        </div>
+      </div>
+     
+      <!-- near me -->
+       <select class="near">
+        <option>Popular cuisines near me</option>
+        <option>Bakery food near me</option>
+        <option>Beverages near me</option>
+        <option>Biriyani near me</option>
+        <option>Burger near me</option>
+        <option>Continental food near me</option>
+        <option>Desserts near me</option>
+       </select>
+       <select class="near">
+        <option>Popular restaurants near me</option>
+        <option>Gowri Krishna</option>
+        <option>Mad Grill</option>
+        <option>Sakthi resort</option>
+        <option>Surya hotels</option>
+        <option>Amutha Surabhi</option>
+       </select>
+       <select class="near">
+        <option>Top restaurant chains</option>
+        <option>Domino's Burger King</option>
+        <option>KFC</option>
+        <option>Krispy kreme</option>
+        <option>MC Donald's</option>
+        <option>Pizza Hut</option>
+       </select>
+
+      <!-- deliver  -->
+      <div class="deliver">
+        <h2>Cities We Deliver to<h2>
+        <div class="row-l">
+            <div class="col-l">
+                <a href="#">Mahalingapuram</a>
+                <a href="#">Sungam</a>
+                <a href="#">Aliyar</a>
+                <a href="#">Kalapatti</a>
+            </div>
+            <div class="col-l">
+                <a href="#">Anaimalai</a>
+                <a href="#">Achipatti</a>
+                <a href="#">Udumalpettai</a>
+                <a href="#">Cheran Nagar</a>
+            </div>
+            <div class="col-l">
+                <a href="#">Puliampatti</a>
+                <a href="#">Perur</a>
+                <a href="#">Palladam</a>
+                <a href="#">Sulur</a>
+            </div>
+            <div class="col-l">
+                <a href="#">Kovilpalayam</a>
+                <a href="#">Gandhinagar</a>
+                <a href="#">Jodhinagar</a>
+                <a href="#">Mettupalayam</a>
+            </div>
+            <div class="col-l">
+                <a href="#">Mullupaadi</a>
+                <a href="#">Kinathukedavu</a>
+                <a href="#">Karamadai</a>
+                <a href="#">See more</a>
+            </div>
+        </div>
+      </div>
+      <footer>
+        <img src="frontpg-img/zomato-black-logo.webp">
+        <div class="foot">
+        <div class="col-l">
+            <a href="#">COMPANY</a>
+            <a href="#">Who we are</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Report fraud</a>
+            <a href="#">Contact</a>
+            <a href="#">Financial information</a>
+        </div>
+        <div class="col-l">
+            <a href="#">FOR FOODIES</a>
+            <a href="#">Code of conduct</a>
+            <a href="#">Community</a>
+            <a href="#">Blogger Help</a>
+            <a href="#">Mobile apps</a>
+        </div>
+        <div class="col-l">
+            <a href="#">FOR RESTAURANTS</a>
+            <a href="#">Add restaurant</a>
+            <a href="#">Claim your Listing</a>
+            <a href="#">Business App</a>
+            <a href="#">Restaurant widgets</a>
+            <a href="#">Product Business</a>
+        </div>
+        <div class="col-l">
+            <a href="#">FOR YOU</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Security</a>
+            <a href="#">Sitemap</a>
+        </div>
+        </div>
+      </footer>
+      <script src="script.js"></script>
 </body>
 </html>
